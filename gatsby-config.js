@@ -4,6 +4,7 @@ module.exports = {
     description: `How many days until Josh can climb?`,
     author: `Joshua Wu`,
   },
+  pathPrefix: "/whencanjoshclimb",
   plugins: [
     `gatsby-plugin-react-helmet`,
     {
