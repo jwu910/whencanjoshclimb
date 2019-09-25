@@ -4,27 +4,7 @@ import moment from "moment"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import './index.css'
-
-const labelStyle = {
-  fontSize: "2em",
-  fontWeight: "500",
-  verticalAlign: "bottom",
-}
-
-const numberStyle = {
-  height: "60px",
-  fontSize: "6em",
-  fontWeight: "800",
-}
-
-const containerStyle = {
-  alignItems: "flex-end",
-  display: "flex",
-  height: "10em",
-  width: "auto",
-  margin: "8px",
-}
+import "./index.css"
 
 const renderer = ({ days, hours, minutes, seconds, completed }) => {
   if (completed) {
@@ -34,36 +14,20 @@ const renderer = ({ days, hours, minutes, seconds, completed }) => {
       <div>
         <div className="timer-container">
           <div className="number-container">
-            <span className="number">
-              {days}
-            </span>
-            <span className="label">
-              D
-            </span>
+            <span className="number">{days}</span>
+            <span className="label">D</span>
           </div>
           <div className="number-container">
-            <span className="number">
-              {hours}
-            </span>
-            <span className="label">
-              H
-            </span>
+            <span className="number">{hours}</span>
+            <span className="label">H</span>
           </div>
           <div className="number-container">
-            <span className="number">
-              {minutes}
-            </span>
-            <span className="label">
-              M
-            </span>
+            <span className="number">{minutes}</span>
+            <span className="label">M</span>
           </div>
           <div className="number-container">
-            <span className="number">
-              {seconds}
-            </span>
-            <span className="label">
-              S
-            </span>
+            <span className="number">{seconds}</span>
+            <span className="label">S</span>
           </div>
         </div>
       </div>
