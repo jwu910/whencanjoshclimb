@@ -8,7 +8,7 @@ import "./index.css"
 
 const renderer = ({ days, hours, minutes, seconds, completed }) => {
   if (completed) {
-    return <span>Should be sorta good by now.. Text him!</span>
+    return <span>Ankle's pretty good.. Text him!</span>
   } else {
     return (
       <div>
